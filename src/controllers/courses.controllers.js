@@ -2,7 +2,7 @@ const CoursesServices = require("../services/courses.services");
 
 const createCourse = async (req, res, next) => {
   try {
-    const { course } = req.body;
+    const course = req.body;
     const result = await CoursesServices.create(course);
     res.status(201).json({ message: "course created successfully" });
   } catch (error) {

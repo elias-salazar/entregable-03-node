@@ -8,7 +8,7 @@ const {
 } = require("../controllers/courses.controllers");
 
 //* create course
-router.post("/courses/", createCourse);
+router.post("/courses", createCourse);
 
 //* update course
 router.put("/courses/:id", updateCourse);
